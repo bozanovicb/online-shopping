@@ -13,6 +13,8 @@
 
 	<context:component-scan
 		base-package="net.b2.onlineshopping.controller" />
+	<context:component-scan
+		base-package="net.b2.shoppingbackend.daoimpl" />
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -24,6 +26,7 @@
 
 	<!-- Loading static resources -->
 	<mvc:annotation-driven />
-	
-    <mvc:resources location="/assets/" mapping="/resources/**" />
+
+	<mvc:resources location="/assets/"
+		mapping="/resources/**" />
 </beans>
